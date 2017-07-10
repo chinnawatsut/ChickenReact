@@ -26,7 +26,16 @@ class App extends Component {
   )
   
   function Vector(props){
-    return <h1>Vector {props.vector} </h1>
+    return (<div>
+        <h1>Vector {props.vector} </h1>
+        <Avatar catImg={props.catImg}/>
+    </div>);
+  }
+
+  function Avatar(props){
+    return (<div>
+      <img src={props.catImg}/>
+    </div>);
   }
     return (
       <div className="App">
@@ -40,7 +49,7 @@ class App extends Component {
             {ele}
         </div>
         <Welcome name="Angdre"/>
-        <Vector vector="23x 11y"/>
+        <Vector vector="23x 11y" catImg="https://camo.githubusercontent.com/0cd910e76658429374539a8d72a0608783918aae/68747470733a2f2f7261776769742e636f6d2f676f72616e67616a69632f72656163742d69636f6e732f6d61737465722f72656163742d69636f6e732e737667"/>
       </div>
     );
   }
