@@ -4,15 +4,36 @@ import './App.css';
 
 class App extends Component {
   render() {
+  
+  let user = {
+    name : "Brian",
+    id : "XC2247"
+  }
+  function convertName(user){
+    return user.name + ":" + user.id;
+  }
+
+  const element = (
+    <div>
+      <p>Info {convertName(user)}</p>
+    </div>
+  );
+
+  const ele = React.createElement(
+    'h1',
+    {className: 'greeting'},
+    'Despacito'
+  )
+  
     return (
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to ChickenReact App</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        {element}
+        {convertName(user)}
+        {ele}
       </div>
     );
   }
