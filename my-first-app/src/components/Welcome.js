@@ -31,6 +31,7 @@ export default class Welcome extends Component {
                {this.state.name === "kera" && 
                   <h2>Name Changed</h2>
                }
+               Name Are Changed?{ this.state.name === "Makrov" ? 'No' : 'Yes'}
          </div>
       );
    }
