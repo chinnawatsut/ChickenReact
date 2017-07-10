@@ -28,7 +28,6 @@ export default class EasyForm extends Component{
             </label>
             <input type="submit" value="Submit"/>
          </form>
-
       );
    }
 }

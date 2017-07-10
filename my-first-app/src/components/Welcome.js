@@ -40,6 +40,7 @@ export default class Welcome extends Component {
                }
                Name Are Changed?{ this.state.name === "Makrov" ? 'No' : 'Yes'}
                {this.listAndKeys()}
+               {this.props.children}
          </div>
       );
    }
