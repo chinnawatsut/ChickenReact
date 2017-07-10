@@ -1,15 +1,24 @@
 import React , { Component } from 'react';
 
 export default class Welcome extends Component {
-
-   render(){
-      function findProps(props){
-      console.log(props);
+   constructor(props){
+      super(props);
+      this.state = {
+         name : "Makrov"
+      };
+    this.handleClick = this.handleClick.bind(this);
    }
 
+    handleClick() {
+    this.setState(prevState => ({
+      name: "kera"
+    }));
+  }
+   render(){
+      
       return (
          <div>
-               <h1>Welcome Mr. {this.props.name} </h1>
+               <h1 onClick={this.handleClick}>Welcome Mr. {this.state.name} </h1>
          </div>
       
       );

@@ -5,10 +5,12 @@ import Welcome from './components/Welcome.js'
 class App extends Component {
   render() {
   
+
   let user = {
     name : "Brian",
     id : "XC2247"
   }
+
   function convertName(user){
     return user.name + ":" + user.id;
   }
@@ -34,7 +36,7 @@ class App extends Component {
 
   function Avatar(props){
     return (<div>
-      <img src={props.catImg}/>
+      <img className={'react-img'} src={props.catImg}/>
     </div>);
   }
     return (
