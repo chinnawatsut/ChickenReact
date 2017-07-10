@@ -1,9 +1,9 @@
 import React , { Component } from 'react';
-export default class Register extends Component{
+export default class EasyForm extends Component{
 
    constructor(props){
       super(props);
-      this.state = {value : 'Enter Name Here'};
+      this.state = {value : 'please write'};
 
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -24,7 +24,7 @@ export default class Register extends Component{
          <form onSubmit={this.handleSubmit}>
             <label>
                name:
-               <input type="text" value={this.state.value} onChange={this.handleChange}/>
+               <textarea type="text" value={this.state.value} onChange={this.handleChange}/>
             </label>
             <input type="submit" value="Submit"/>
          </form>
