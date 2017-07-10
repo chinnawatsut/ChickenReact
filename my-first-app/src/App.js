@@ -35,7 +35,7 @@ class App extends Component {
             {convertName(user)}
             {ele}
         </div>
-        <Welcome/>
+        <Welcome name="Angdre"/>
       </div>
     );
   }
