@@ -22,6 +22,12 @@ export default class Welcome extends Component {
             console.log(this);
       }
 
+      listAndKeys = () => {
+            const number = [1,2,3,4,5];
+            const listItems = number.map((number) => <li key={number}>{number}</li>);
+            return listItems;
+      }
+
    render(){
       
       return (
@@ -32,6 +38,7 @@ export default class Welcome extends Component {
                   <h2>Name Changed</h2>
                }
                Name Are Changed?{ this.state.name === "Makrov" ? 'No' : 'Yes'}
+               {this.listAndKeys()}
          </div>
       );
    }
