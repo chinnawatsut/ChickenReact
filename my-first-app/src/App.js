@@ -24,6 +24,10 @@ class App extends Component {
     {className: 'greeting'},
     'Despacito'
   )
+  
+  function Vector(props){
+    return <h1>Vector {props.vector} </h1>
+  }
     return (
       <div className="App">
         <div className="App-header">
@@ -36,6 +40,7 @@ class App extends Component {
             {ele}
         </div>
         <Welcome name="Angdre"/>
+        <Vector vector="23x 11y"/>
       </div>
     );
   }
